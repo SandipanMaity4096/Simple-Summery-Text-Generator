@@ -10,12 +10,12 @@ A small Python app that sends input text to Google Gemini and returns a short 3-
    ```
 2. Set your Gemini API key:
    ```bash
-   # Windows
-   setx GEMINI_API_KEY "your-key-here"
-
-   # macOS/Linux
-   export GEMINI_API_KEY="your-key-here"
+   # Windows Command Prompt
+   copy .env.example .env
+   notepad .env
    ```
+   Replace `your-key-here` in `.env` with your Gemini API key, then save the file.
+   The application loads `.env` automatically when it starts.
 3. Run the app:
    ```bash
    python simple_summarizer_gemini.py
